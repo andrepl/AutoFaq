@@ -1,0 +1,3 @@
+autofaq:
+  pattern: 'how.*faq'
+  response: "There is currently no support for adding or removing FAQ's other than editing faqs.yml"

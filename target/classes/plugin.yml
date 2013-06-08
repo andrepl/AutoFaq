@@ -1,0 +1,25 @@
+name: AutoFaq
+main: com.norcode.bukkit.autofaq.AutoFaq
+version: 0.0.1-SNAPSHOT
+softdepend: []
+author: metalhedd
+
+commands:
+  faq:
+    usage: /<command> [<player>] <FAQ Name>
+    permission: autofaq.use
+  autofaq:
+    usage: /<command> reload
+    permissions: autofaq.admin
+
+permissions:
+  autofaq.admin:
+    default: op
+    children:
+      autofaq.use.others: true
+
+  autofaq.use.others:
+    default: op
+
+  autofaq.use:
+    default: true
